@@ -43,8 +43,8 @@ This project follows the `egs2` format of ESPnet. Follow the steps below to inst
    ```bash
    MAIN_ROOT=/your/custom/path/to/espnet/
    KALDI_ROOT=$MAIN_ROOT/tools/kaldi
-3. **Download exp directory**
-   Download exp directory from Trained Model Link.
+3. **Download exp directory**  
+   Download exp directory from Trained Model Link.  
    __Upcoming Update ver 0.2.0__ : Training code will be updated
 4. **Run the Project**  
    Execute the following command to start the project:
