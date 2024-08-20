@@ -37,7 +37,13 @@ This project follows the `egs2` format of ESPnet. Follow the steps below to inst
 
 1. **Install ESPnet**  
    Install ESPnet by following the [ESPnet Installation Guide](https://espnet.github.io/espnet/installation.html).
-
+2. **Copy espnet files**
+   Copy some directory in egs2/TEMPLATE
+   ```bash
+   cp -r /path/to/espnet/egs2/TEMPLATE/asr1/pyscripts /path/to/dir
+   cp -r /path/to/espnet/egs2/TEMPLATE/asr1/scripts /path/to/dir
+   cp -r /path/to/espnet/egs2/TEMPLATE/asr1/steps /path/to/dir
+   cp -r /path/to/espnet/egs2/TEMPLATE/asr1/utils /path/to/dir
 2. **Modify path.sh**  
    Modify the __path.sh__ file in this project to adjust the paths accordingly.
    ```bash
