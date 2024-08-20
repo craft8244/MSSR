@@ -40,7 +40,9 @@ This project follows the `egs2` format of ESPnet. Follow the steps below to inst
 
 2. **Modify path.sh**  
    Modify the __path.sh__ file in this project to adjust the paths accordingly.
-   패스 수정법
+   ```bash
+   MAIN_ROOT=/your/custom/path/to/espnet/
+   KALDI_ROOT=$MAIN_ROOT/tools/kaldi
 
 3. **Run the Project**  
    Execute the following command to start the project:
