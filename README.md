@@ -32,7 +32,7 @@ This project implements **Multi Speaker Speech Recognition (MSSR)** using the [E
 - Included Trained models and performance metrics.
 
 ## Installation and Usage
-__Important: The current code only supports testing, training is not available.__
+__Important: The current code only supports testing, training is not available.__  
 This project follows the `egs2` format of ESPnet. Follow the steps below to install and run the project:
 
 1. **Install ESPnet**  
