@@ -1,4 +1,4 @@
-MAIN_ROOT=/mls/mskim/tools/espnet_240531
+MAIN_ROOT=/please/check/here/espnet/
 
 export PATH=$PWD/utils/:$PATH
 export LC_ALL=C
