@@ -1,22 +1,35 @@
 # Multi Speaker Speech Recognition (MSSR)
 
-## 개요
-이 프로젝트는 **Multi Speaker Speech Recognition (MSSR)**을 [ESPnet](https://github.com/espnet/espnet) 툴을 사용하여 구현한 것입니다. 현재는 두 명의 음성이 섞인 경우 이를 분리하여 음성 인식하는 기능만 제공합니다. 앞으로 임의의 N명에 대해서도 구현할 예정입니다.
+## Overview
+This project implements **Multi Speaker Speech Recognition (MSSR)** using the [ESPnet](https://github.com/espnet/espnet) tool. Currently, it only supports the separation and recognition of speech when two voices are mixed. Future plans include extending the implementation to handle an arbitrary number of speakers.
 
-- 학습된 모델 링크: [모델 링크](#)
-- 성능: (여기에 성능 정보를 추가하세요)
-- 관련 논문 링크: [논문 링크](#)
+- Trained Model Link: [Model Link](#)
+- Performance: Performance comparison of the baseline model and the proposed models in terms of WER (Word Error Rate) and their relative improvements (rel. imp.) over the baseline.
 
-## 설치 및 구동 방법
-이 프로젝트는 기본적으로 ESPnet의 `egs2` 형식을 따릅니다. 아래의 단계를 따라서 설치하고 구동할 수 있습니다:
+| Model                                    | WER   | Relative Improvement (rel. imp.) |
+|------------------------------------------|-------|----------------------------------|
+| Single-speaker ASR                       | 76.90 | -                                |
+| DPRNN-TasNet + ASR [43]                  | 13.60 | -                                |
+| Transformer Multi-speaker ASR [5]        | 8.43  | -                                |
+| SAT-ASR i-vector                         | 8.50  | -0.8%                            |
+| (proposed) d-vector                      | 8.32  | 1.3%                             |
+| x-vector                                 | 8.10  | 3.9%                             |
+| SAT-ASR i-vector + speaker profile       | 8.27  | 1.9%                             |
+| (proposed) d-vector + speaker profile    | 8.18  | 3.0%                             |
+| (proposed) x-vector                      | 7.48  | 11.2%                            |
 
-1. **ESPnet 설치**  
-   ESPnet을 설치합니다. [ESPnet 설치 가이드](https://espnet.github.io/espnet/installation.html)를 참고하세요.
+- Related Paper Link: [Paper Link](#)
 
-2. **path.sh 수정**  
-   해당 프로젝트의 `path.sh` 파일에서 경로를 수정합니다.
+## Installation and Usage
+This project follows the `egs2` format of ESPnet. Follow the steps below to install and run the project:
 
-3. **프로젝트 실행**  
-   다음 명령어를 실행하여 프로젝트를 시작합니다:
+1. **Install ESPnet**  
+   Install ESPnet by following the [ESPnet Installation Guide](https://espnet.github.io/espnet/installation.html).
+
+2. **Modify path.sh**  
+   Modify the `path.sh` file in this project to adjust the paths accordingly.
+
+3. **Run the Project**  
+   Execute the following command to start the project:
    ```bash
    ./run.sh
