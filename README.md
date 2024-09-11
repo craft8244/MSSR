@@ -3,6 +3,8 @@
 ## Overview
 This project implements **Multi Speaker Speech Recognition (MSSR)** using the [ESPnet](https://github.com/espnet/espnet) tool. Currently, it only supports the separation and recognition of speech when two voices are mixed. Future plans include extending the implementation to handle an arbitrary number of speakers.
 
+## Due to a critical issue identified in the major code, we have temporarlly removed the trained model & inference codes. check the update plan
+
 - Supported Language : EN(english) only
 - Used Dataset : Libri2Mix from [LibriMix](https://github.com/JorisCos/LibriMix)
 - Trained Model Link: [Model Link](https://huggingface.co/craft8244/MSSR) (To be added soon)
