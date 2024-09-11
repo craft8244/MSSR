@@ -5,7 +5,7 @@ This project implements **Multi Speaker Speech Recognition (MSSR)** using the [E
 
 - Supported Language : EN(english) only
 - Used Dataset : Libri2Mix from [LibriMix](https://github.com/JorisCos/LibriMix)
-- Trained Model Link: [Model Link](https://huggingface.co/craft8244/MSSR)
+- Trained Model Link: [Model Link](https://huggingface.co/craft8244/MSSR) (To be added soon)
 - Performance:
 
 | Model                                    | WER   | Relative Improvement (rel. imp.) |
@@ -26,6 +26,10 @@ This project implements **Multi Speaker Speech Recognition (MSSR)** using the [E
 ### version 0.2.0 - future plan
 - upload training code.
 - upload paper link.
+- will be re-upload trained model (hugging face) & inference codes (espnet style)
+
+### version 0.1.1 - 2024-09-11
+- Due to a critical issue identified in the major code, we have temporarlly removed the trained model & inference codes.
 
 ### version 0.1.0 - 2024-08-20
 - Initial release with support for 2-speaker separation using ESPnet.
