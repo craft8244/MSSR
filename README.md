@@ -1,6 +1,6 @@
 # Multi Speaker Speech Recognition (MSSR)
 
-### critical issue is identified in the major code. we have temporarlly removed the trained model & inference codes. check the update plan
+#### A critical issue has been identified in the main codebase. We have temporarily removed the trained model and inference codes. Please refer to the update plan for more details.
 
 ## Overview
 This project implements **Multi Speaker Speech Recognition (MSSR)** using the [ESPnet](https://github.com/espnet/espnet) tool. Currently, it only supports the separation and recognition of speech when two voices are mixed. Future plans include extending the implementation to handle an arbitrary number of speakers.
